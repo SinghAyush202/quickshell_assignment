@@ -1,4 +1,4 @@
-.kanban-board {
+/* .kanban-board {
   display: flex;
   padding: 20px;
   background-color: #f4f5f8;
@@ -98,4 +98,79 @@
   height: 8px;
   border-radius: 50%;
   background-color: #8e8e8e;
+} */
+
+/* Kanban Board Styling */
+.kanban-board {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.board-columns {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Column Styling */
+.column {
+  min-width: 300px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Ticket Card Styling */
+.card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.priority-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Column Header Styling */
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
